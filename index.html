@@ -1,3 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator UI</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #0f172a;
+      font-family: Arial;
+    }
+
+    .calculator {
+      width: 280px;
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+
+    .display {
+      height: 60px;
+      background: #0b1220;
+      color: white;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 18px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      background: #334155;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:active {
+      transform: scale(0.95);
+      background: #475569;
+    }
+  </style>
+</head>
+
 <body>
-    <h2>test</h2>
+
+<div class="calculator">
+
+  <div class="display">0</div>
+
+  <div class="buttons">
+    <button>C</button>
+    <button>/</button>
+    <button>*</button>
+    <button>-</button>
+
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>+</button>
+
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>=</button>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>0</button>
+  </div>
+
+</div>
+
 </body>
+</html>
